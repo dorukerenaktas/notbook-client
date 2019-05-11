@@ -1,0 +1,25 @@
+.registerForm {
+    max-width: 300px;
+    text-align: center;
+}
+
+.registerFormLogo {
+    cursor: default;
+    display: block;
+    font-size: 44px;
+    margin-bottom: 32px;
+}
+
+.registerFormGoToLoginContainer {
+    margin: 16px;
+}
+
+.registerFormGoToLogin {
+    margin-left: 4px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.registerFormGoToLogin:hover {
+    opacity: .8;
+}

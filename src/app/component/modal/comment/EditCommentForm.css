@@ -1,0 +1,8 @@
+.editCommentForm {
+    text-align: center;
+}
+
+.editCommentFormTextArea {
+    margin: 12px 0 12px 0;
+    resize: none;
+}

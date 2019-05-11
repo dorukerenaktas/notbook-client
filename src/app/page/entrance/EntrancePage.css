@@ -1,0 +1,39 @@
+.entranceCarousel {
+    overflow: hidden;
+}
+
+.entranceCarouselArrow {
+    -webkit-transition: color 1s ease-out;
+    -moz-transition: color 1s ease-out;
+    -o-transition: color 1s ease-out;
+    transition: color 1s ease-out;
+
+    opacity: 0.4;
+    cursor: pointer;
+    position: fixed;
+    z-index: 2;
+    font-size: 24px;
+    top: 50%;
+}
+
+.entranceImage {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+}
+
+.entranceTitle {
+    max-width: var(--page-content-width);
+    margin: 12px 16px 0;
+    font-size: 24px;
+    font-family: "Bungee", cursive;
+    display: block;
+}
+
+.entranceDescription {
+    max-width: var(--page-content-width);
+    margin: 12px 16px 0;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    display: block;
+}

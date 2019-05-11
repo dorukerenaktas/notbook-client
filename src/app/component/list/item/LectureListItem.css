@@ -1,0 +1,18 @@
+.lectureListItem {
+    padding: 12px 0 12px 0;
+}
+
+.lectureListItemCode {
+    font-weight: 600;
+}
+
+.lectureListItemName {
+    margin-left: 8px;
+    font-weight: 400;
+}
+
+.lectureListItemUniversityName {
+    font-weight: 200;
+    font-size: 12px;
+    color: #bfbfbf;
+}

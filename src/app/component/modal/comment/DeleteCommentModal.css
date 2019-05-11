@@ -1,0 +1,16 @@
+.deleteCommentModal {
+    padding: 24px;
+}
+
+.deleteCommentModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.deleteCommentModalDescription {
+    text-align: center;
+}
+
+.deleteCommentModalButton {
+    margin-top: 24px;
+}

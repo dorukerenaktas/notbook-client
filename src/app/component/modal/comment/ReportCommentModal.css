@@ -1,0 +1,16 @@
+.reportCommentModal {
+    padding: 24px;
+}
+
+.reportCommentModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.reportCommentModalDescription {
+    text-align: center;
+}
+
+.reportCommentModalButton {
+    margin-top: 24px;
+}

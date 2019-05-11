@@ -1,0 +1,28 @@
+.listItemActions {
+    cursor: default;
+    margin-top: 12px;
+}
+
+.listItemActionItem {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 12px;
+    color: #8c8c8c;
+
+    -webkit-transition: color 0.5s ease-out;
+    -moz-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+}
+
+.listItemActionItem:hover {
+    color: #595959;
+}
+
+.listItemActionItemIcon {
+    margin-right: 6px;
+}
+
+.listItemActionItemValue {
+    font-size: 13px;
+}

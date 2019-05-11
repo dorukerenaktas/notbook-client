@@ -1,0 +1,58 @@
+.lecturePageHeader {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.lecturePageHeaderLogo {
+    width: 96px;
+    height: 96px;
+}
+
+.lecturePageHeaderTitleContainer {
+    text-align: center;
+}
+
+.lecturePageHeaderTitleCode {
+    font-size: 18px;
+    font-weight: 600;
+    color: #8c8c8c;
+}
+
+.lecturePageHeaderTitleName {
+    font-size: 22px;
+    font-weight: 200;
+    color: #595959;
+}
+
+.lecturePageHeaderTitleUniversity {
+    font-size: 14px;
+    margin-right: 4px;
+    color: #bfbfbf;
+}
+
+.lecturePageHeaderAttributes {
+    cursor: default;
+    text-align: center;
+    font-size: 14px;
+    padding: 12px 0 0;
+    color: #bfbfbf;
+}
+
+.lecturePageHeaderAttributeIcon {
+    margin-right: 4px;
+}
+
+.lecturePageHeaderAttributeText {
+    margin-right: 16px;
+    color: #bfbfbf;
+}
+
+.lecturePageHeaderActions {
+    margin-top: 24px;
+    font-size: 12px;
+}
+
+.lecturePageHeaderActionsAttend {
+    padding: 0 8px 0;
+}
+

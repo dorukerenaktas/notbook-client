@@ -1,0 +1,16 @@
+.deletePostModal {
+    padding: 24px;
+}
+
+.deletePostModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.deletePostModalDescription {
+    text-align: center;
+}
+
+.deletePostModalButton {
+    margin-top: 24px;
+}

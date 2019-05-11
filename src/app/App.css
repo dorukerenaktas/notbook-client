@@ -1,0 +1,120 @@
+@import "~antd/dist/antd.css";
+
+:root {
+    /* Color */
+    --primary-color: #1890FF;
+    --primary-white-color: #FFFFFF;
+    --primary-text-light-color: #E8E8E8;
+    --dim-color: rgba(245, 245, 245, 0.8);
+    --light-dim-color: rgba(255, 255, 255, 0.5);
+
+    /* Toolbar */
+    --toolbar-height: 64px;
+    --toolbar-text-align: center;
+    --toolbar-line-height: 64px;
+    --toolbar-horizontal-padding: 12px;
+    --toolbar-z-index: 10;
+
+    /* Page Content */
+    --page-content-padding: 12px;
+    --page-content-width: 100%;
+    --page-content-min-height: calc(100vh - var(--toolbar-height));
+}
+
+@media only screen and (max-width: 575px) {
+    :root {
+        --toolbar-height: 84px;
+        --toolbar-text-align: center;
+        --toolbar-line-height: 36px;
+        --toolbar-horizontal-padding: 12px;
+
+        --page-content-padding: 12px;
+        --page-content-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    :root {
+        --toolbar-height: 84px;
+        --toolbar-text-align: center;
+        --toolbar-line-height: 36px;
+        --toolbar-horizontal-padding: 24px;
+
+        --page-content-padding: 12px;
+        --page-content-width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        --toolbar-height: 64px;
+        --toolbar-text-align: left;
+        --toolbar-line-height: 64px;
+        --toolbar-horizontal-padding: 36px;
+
+        --page-content-padding: 12px;
+        --page-content-width: 66%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    :root {
+        --toolbar-height: 64px;
+        --toolbar-text-align: left;
+        --toolbar-line-height: 64px;
+        --toolbar-horizontal-padding: 36px;
+
+        --page-content-padding: 12px;
+        --page-content-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        --toolbar-height: 64px;
+        --toolbar-text-align: left;
+        --toolbar-line-height: 64px;
+        --toolbar-horizontal-padding: 36px;
+
+        --page-content-padding: 12px;
+        --page-content-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    :root {
+        --toolbar-height: 64px;
+        --toolbar-text-align: left;
+        --toolbar-line-height: 64px;
+        --toolbar-horizontal-padding: 36px;
+
+        --page-content-padding: 12px;
+        --page-content-width: 50%;
+    }
+}
+
+.logo {
+    font-family: Blur, sans-serif;
+    font-size: 28px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.link {
+    cursor: pointer !important;
+    display: inline-block;
+}
+
+.link span {
+    cursor: pointer;
+
+    -webkit-transition: color 0.3s ease-out;
+    -moz-transition: color 0.3s ease-out;
+    -o-transition: color 0.3s ease-out;
+    transition: color 0.3s ease-out;
+}
+
+.link:hover span {
+    color: var(--primary-color) !important;
+}
+

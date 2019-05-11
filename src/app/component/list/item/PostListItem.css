@@ -1,0 +1,13 @@
+.postListItem {
+    display: table;
+}
+
+.postListItemSide {
+    display: table-cell;
+    padding: 4px 12px 0 0;
+}
+
+.postListItemBody {
+    display: table-cell;
+    height: 100%;
+}

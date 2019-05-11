@@ -1,0 +1,22 @@
+.createCommentModal {
+    padding: 24px;
+}
+
+.createCommentModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.createCommentModalHeader {
+    text-align: left;
+}
+
+.createCommentModalName {
+    margin: 12px;
+    font-size: 14px;
+}
+
+.createCommentModalTextArea {
+    margin: 12px 0 12px 0;
+    resize: none;
+}

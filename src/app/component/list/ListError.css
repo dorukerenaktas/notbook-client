@@ -1,0 +1,12 @@
+.listError {
+    text-align: center;
+}
+
+.listErrorRow {
+    margin: 8px;
+}
+
+.listErrorIcon {
+    font-size: 96px;
+    color: #E8E8E8;
+}

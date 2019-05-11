@@ -1,0 +1,31 @@
+.verifyEmail {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.verifyEmailImage {
+    max-width: 300px;
+    margin-bottom: 24px;
+    opacity: 0.97;
+}
+
+.verifyEmailTitle {
+    font-size: 17px;
+    margin-bottom: 8px;
+    max-width: 70%;
+    color: #262626;
+}
+
+.verifyEmailMessage {
+    font-size: 15px;
+    max-width: 300px;
+    color: #8c8c8c;
+}
+
+.verifyEmailLink {
+    font-size: 15px;
+}

@@ -1,0 +1,14 @@
+.editNoteForm {
+}
+
+.editNoteFormItem {
+    margin: 0;
+}
+
+.editNoteFormTextArea {
+    resize: none;
+}
+
+.editNoteFormButton {
+    margin-top: 24px;
+}

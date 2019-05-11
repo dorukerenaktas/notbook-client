@@ -1,0 +1,22 @@
+.createNoteModal {
+    padding: 24px;
+}
+
+.createNoteModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.createNoteModalHeader {
+    text-align: left;
+}
+
+.createNoteModalName {
+    margin: 12px;
+    font-size: 14px;
+}
+
+.createNoteModalTextArea {
+    margin: 12px 0 12px 0;
+    resize: none;
+}

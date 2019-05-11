@@ -1,0 +1,37 @@
+.loginForm {
+    max-width: 300px;
+    text-align: center;
+}
+
+.loginFormLogo {
+    cursor: default;
+    display: block;
+    font-size: 44px;
+    margin-bottom: 32px;
+}
+
+.loginFormForgotPassword {
+    display: block;
+    float: right;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.loginFormForgotPassword:hover {
+    opacity: .8;
+}
+
+.loginFormGoToRegisterContainer {
+    margin: 16px;
+}
+
+.loginFormGoToRegister {
+    margin-left: 4px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.loginFormGoToRegister:hover {
+    opacity: .8;
+}

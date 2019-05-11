@@ -1,0 +1,61 @@
+.certainCategorySearch {
+    width: 100%;
+}
+
+.certainCategorySearchDropdown {
+    width: 100%;
+    font-size: 1em;
+    z-index: 11;
+}
+
+.certainCategorySearchDropdown .ant-select-dropdown-menu-item-group-title {
+    color: #666;
+    font-size: 14px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.certainCategorySearchDropdown .ant-select-dropdown-menu-item {
+    padding-left: 16px;
+}
+
+.certainCategorySearchDropdownEmpty {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    padding: 16px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    white-space: initial;
+    font-size: 14px;
+}
+
+.certainCategorySearchDropdownNotFind {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    padding: 16px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.certainCategorySearchDropdownNotFindButton {
+    margin: 4px;
+}
+
+.certainCategorySearchDropdown .ant-select-dropdown-menu {
+    max-height: 300px;
+}
+
+.certainCategorySearch .ant-select-focused .certain-category-icon {
+    color: #108ee9;
+}

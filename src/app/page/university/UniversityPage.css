@@ -1,0 +1,47 @@
+.universityPage {
+    margin-top: 12px;
+}
+
+.universityPageHeader {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.universityPageHeaderLogo {
+    width: 96px;
+    height: 96px;
+}
+
+.universityPageHeaderTitleContainer {
+    text-align: center;
+}
+
+.universityPageHeaderTitle {
+    font-size: 18px;
+    font-weight: 200;
+    color: #595959;
+}
+
+.universityPageHeaderLocation {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.universityPageHeaderAttributes {
+    cursor: default;
+    text-align: center;
+    font-size: 14px;
+    padding: 12px 0 0;
+    color: #bfbfbf;
+}
+
+.universityPageHeaderAttributeIcon {
+    margin-left: 8px;
+    margin-right: 4px;
+}
+
+.universityPageHeaderAttributeText {
+    margin-right: 8px;
+    color: #bfbfbf;
+}
+

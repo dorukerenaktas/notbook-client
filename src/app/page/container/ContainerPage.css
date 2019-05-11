@@ -1,0 +1,10 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent {
+    padding-top: var(--toolbar-height);
+    width: var(--page-content-width);
+}

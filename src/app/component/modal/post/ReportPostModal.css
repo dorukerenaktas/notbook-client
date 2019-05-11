@@ -1,0 +1,16 @@
+.reportPostModal {
+    padding: 24px;
+}
+
+.reportPostModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.reportPostModalDescription {
+    text-align: center;
+}
+
+.reportPostModalButton {
+    margin-top: 24px;
+}

@@ -1,16 +1,29 @@
 {
   "name": "notbook-client",
-  "version": "0.1.0",
+  "version": "1.0",
   "private": true,
   "dependencies": {
-    "@types/jest": "24.0.11",
-    "@types/node": "11.12.2",
-    "@types/react": "16.8.10",
-    "@types/react-dom": "16.8.3",
+    "antd": "^3.16.6",
+    "axios": "latest",
+    "axios-mock-adapter": "latest",
+    "faker": "^4.1.0",
+    "history": "^4.9.0",
+    "i18next": "^15.0.9",
+    "i18next-browser-languagedetector": "^3.0.1",
+    "i18next-xhr-backend": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-i18next": "^10.6.1",
+    "react-redux": "^5.0.7",
+    "react-redux-loading-bar": "^4.2.0",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8",
-    "typescript": "3.4.1"
+    "reactn": "^1.0.0",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "2.13.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -26,5 +39,18 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@types/faker": "^4.1.5",
+    "@types/history": "^4.7.2",
+    "@types/jest": "24.0.11",
+    "@types/node": "11.12.2",
+    "@types/react": "16.8.10",
+    "@types/react-dom": "16.8.3",
+    "@types/react-redux": "^7.0.6",
+    "@types/react-router": "^4.4.5",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/redux-logger": "^3.0.7",
+    "typescript": "3.4.1"
+  }
 }

@@ -1,0 +1,376 @@
+{
+  "appName": "notbook.",
+  "response": {
+    "common": {
+      "unknown": "Bir hata oluştu"
+    },
+    "login": {
+      "success": "Hoşgeldin!",
+      "emailOrPasswordWrong": "Öğrenci e-postası yada şifre hatalı"
+    },
+    "register": {
+      "success": "Kayıt işlemin başarıyla gerçekleşti, öğrenci e-postanı doğrula ve giriş yap!",
+      "invalidStudentMail": "Öğrenci e-postan sistemimizdeki üniversiteler ile uyuşmuyor",
+      "emailIsTaken": "Bu öğrenci e-postası zaten kayıtlı"
+    },
+    "verifyPassword": {
+      "success": "Şifren yenilendi. Hemen giriş yaparak dene!",
+      "unknown": "Giriş bağlantın hatalı! Tekrar şifremi unuttum bölümüne gidebilirsin..."
+    },
+    "forgotPassword": {
+      "success": "Giriş bağlantını yolladık, e-posta adresini kontrol et!",
+      "userNotExist": "Öğrenci e-postası sisteme kayıtlı değil"
+    },
+    "resendVerification": {
+      "success": "Doğrulama maili yola çıktı, e-posta adresini kontrol et!",
+      "userNotExist": "Öğrenci e-postası sisteme kayıtlı değil"
+    },
+    "createLecture": {
+      "lectureAlreadyExists": "Bu kodu veya adı taşıyan ders zaten var!"
+    },
+    "createPost": {
+      "success": "Paylaşımın uzak diyarlara yollandı!"
+    },
+    "updatePost": {
+      "success": "Paylaşımın düzenlendi"
+    },
+    "deletePost": {
+      "success": "Sildik gitti, hadi hayılısı"
+    },
+    "reportPost": {
+      "success": "Şikayetin değerlendirmeye alındı, en kısa zamanda halledicez",
+      "alreadyReported": "Zaten şikayet etmiştin, neye doldun bu kadar? Merak etme çaresine bakıcaz",
+      "verified": "Bu paylaşım kontrol edilmiş ve uygun bulunmuştur, şikayet etmene gerek yok zaten baktık bi kere"
+    },
+    "createNote": {
+      "success": "Not başarıyla oluşturuldu!"
+    },
+    "updateNote": {
+      "success": "Notun düzenlendi"
+    },
+    "reportNote": {
+      "success": "Şikayetin değerlendirmeye alındı, en kısa zamanda halledicez",
+      "alreadyReported": "Zaten şikayet etmiştin, neye doldun bu kadar? Merak etme çaresine bakıcaz",
+      "verified": "Bu not kontrol edilmiş ve uygun bulunmuştur, şikayet etmene gerek yok zaten baktık bi kere"
+    },
+    "rateNote": {
+      "success": "Teşekkürler isimsiz kahraman!"
+    },
+    "createComment": {
+      "success": "Yorumun uzak diyarlara gönderildi!"
+    },
+    "updateComment": {
+      "success": "Yorumun düzenlendi"
+    },
+    "deleteComment": {
+      "success": "Sildik gitti, hadi hayılısı"
+    },
+    "reportComment": {
+      "success": "Şikayetin değerlendirmeye alındı, en kısa zamanda halledicez",
+      "alreadyReported": "Zaten şikayet etmiştin, neye doldun bu kadar? Merak etme çaresine bakıcaz",
+      "verified": "Bu yorum kontrol edilmiş ve uygun bulunmuştur, şikayet etmene gerek yok zaten baktık bi kere"
+    },
+    "search": {
+      "unknown": "Arama sonuçları yüklenemedi"
+    }
+  },
+  "input": {
+    "firstName": {
+      "placeholder": "Ad",
+      "required": "Ad boş bırakılamaz",
+      "invalid": "Ad sadece harf içerebilir"
+    },
+    "lastName": {
+      "placeholder": "Soyad",
+      "required": "Soyad boş bırakılamaz",
+      "invalid": "Soyad sadece harf içerebilir"
+    },
+    "email": {
+      "placeholder": "Öğrenci E-posta Adresi",
+      "required": "Öğrenci e-postası boş bırakılamaz",
+      "invalid": "Öğrenci e-postası geçerli değil"
+    },
+    "password": {
+      "placeholder": "Şifre",
+      "required": "Şifre boş bırakılamaz",
+      "minLength": "Şifre en az 8 karakter içermelidir",
+      "maxLength": "Şifre en fazla 32 karakter içerebilir"
+    },
+    "rePassword": {
+      "placeholder": "Şifre Doğrulama",
+      "required": "Şifre boş bırakılamaz",
+      "notMatching": "Şifreler eşleşmiyor"
+    },
+    "universityName": {
+      "label": "Üniversite"
+    },
+    "lectureName": {
+      "placeholder": "Ders adı",
+      "required": "Ders adı boş bırakılamaz",
+      "invalid": "Ders adı sadece harf ve sayı içerebilir",
+      "label": "Ders Adı"
+    },
+    "lectureCode": {
+      "placeholder": "Ders kodu",
+      "required": "Ders kodu boş bırakılamaz",
+      "invalid": "Ders kodu sadece harf ve sayı içerebilir",
+      "label": "Ders Kodu"
+    },
+    "commentContent": {
+      "placeholder": "Cevap yaz",
+      "required": "Bu yorum geleceğim kadar boş"
+    },
+    "postContent": {
+      "announcementPlaceholder": "Ders bugün iptal, sınav tarihi değişti gibi şeyler işte...",
+      "suggestionPlaceholder": "Ders nasıl geçilir, hangi hocadan alınır gibi şeyler işte...",
+      "universityPlaceholder": "Okulun ile alakalı söylemek istediğin her şeyi buraya yazabilirsin...",
+      "announcementRequired": "Bu duyuru geleceğim kadar boş",
+      "suggestionRequired": "Bu öneri geleceğim kadar boş",
+      "universityRequired": "Bu paylaşım geleceğim kadar boş"
+    },
+    "noteName": {
+      "placeholder": "Not adı",
+      "required": "Not adı boş bırakılamaz",
+      "label": "Not Adı"
+    },
+    "noteDescription": {
+      "placeholder": "Not ile alakalı ayırt edici her şeyi buraya yazabilirsin... Hangi hocanın notu olduğunu, hangi konuları kapsadığını falan mesela...",
+      "required": "Not açıklamsı boş bırakılamaz",
+      "label": "Not Açıklaması"
+    },
+    "noteTag": {
+      "placeholder": "Etiket seç",
+      "required": "Etiket boş bırakılamaz",
+      "label": "Etiket"
+    },
+    "noteDocument": {
+      "title": "Tıkla veya dosyayı sürekleyip bırak",
+      "description": "Şu anda sadece PDF, Word, PowerPoint veya Excel uzantılı notları kabul ediyoruz. Notlarının formatı uygun değilse internet üzerinden çeviriver sana zahmet.",
+      "required": "Dosya boş bırakılamaz",
+      "invalidType": "Sadece PDF, Word, PowerPoint veya Excel uzantılı dosyaları yükleyebilirsin",
+      "invalidSize": "Obaa kanka naptın? 100Mb üst sınır, eklediğin not üst sınırı aşıyor",
+      "label": "Dosya"
+    }
+  },
+  "form": {
+    "login": {
+      "forgotPassword": "Şifreni mi unuttun?",
+      "button": "Giriş Yap",
+      "goToRegisterDescription": "Hesabın yok mu?",
+      "goToRegister": "Sana etrafı gezdirelim!"
+    },
+    "register": {
+      "button": "Kayıt Ol",
+      "goToLoginDescription": "Şaka şaka zaten hesabım var.",
+      "goToLogin": "Giriş Yap"
+    },
+    "resendVerification": {
+      "button": "Tekrar yolla"
+    },
+    "verifyPassword": {
+      "description": "Şifreni yenilemeye çok yaklaştın. Şimdi sakince yeni şifreni oluştur!",
+      "button": "Şifreyi yenile",
+      "goToLoginDescription": "Galiba yanlış yerdeyim.",
+      "goToLogin": "Giriş Yap"
+    },
+    "forgotPassword": {
+      "button": "Giriş bağlantısı gönder"
+    },
+    "createLecture": {
+      "button": "Oluştur"
+    },
+    "createComment": {
+      "button": "Paylaş"
+    },
+    "createNote": {
+      "button": "Oluştur"
+    },
+    "editComment": {
+      "button": "Düzenle"
+    },
+    "createPost": {
+      "button": "Paylaş"
+    },
+    "editPost": {
+      "button": "Düzenle"
+    },
+    "editNote": {
+      "button": "Düzenle"
+    }
+  },
+  "modal": {
+    "resendVerification": {
+      "title": "Öğrenci e-postan doğrulanmamış",
+      "paragraph1": "Öğrenci e-postanı doğrulamadan sisteme giriş yapamazsın. Hayır dedim, hayır ısrar etme giremezsin. Üniversite öğrencisi olduğunu kanıtlamamız için öğrenci e-postanı doğrulaman gerekiyor.",
+      "paragraph2": "Eğer doğrulama e-postasının sana gelmediğini düşünüyorsan hemen yenisini yollayalım.",
+      "description": "*Doğrulama e-postaları spam kutusuna düşmüş olabilir, oralara iyice bi bakıver."
+    },
+    "forgotPassword": {
+      "title": "Hangimiz şifremizi unutmuyoruz ki ?",
+      "paragraph": "Tamam sakin ol, korkacak bir şey yok. Öğrenci e-posta adresini gir ve hesabına yeniden girebilmen için sana bir bağlantı gönderelim."
+    },
+    "deleteComment": {
+      "description": "Emin misin bak silerim? Bu paylaşımı silmekten vazgeçmek istiyorsan bu son şansın...",
+      "button": "Sil"
+    },
+    "reportComment": {
+      "description": "Bu yorum uygun olmayan bir dil içeriyorsa hemen şikayet et, en kısa zamanda hallederiz. ",
+      "button": "Şikayet et"
+    },
+    "deletePost": {
+      "description": "Emin misin bak silerim? Bu paylaşımı silmekten vazgeçmek istiyorsan bu son şansın...",
+      "button": "Sil"
+    },
+    "reportPost": {
+      "description": "Bu paylaşım uygun olmayan bir dil içeriyorsa hemen şikayet et, en kısa zamanda hallederiz. ",
+      "button": "Şikayet et"
+    },
+    "reportNote": {
+      "description": "Bu not uygun olmayan bir dil içeriyorsa hemen şikayet et, en kısa zamanda hallederiz. ",
+      "button": "Şikayet et"
+    },
+    "rateNote": {
+      "description": "Not iyi mi? Yoksa yüzüne bakmaya değmez mi? Fazla yıldız alan notlar öne çıkar, çocukların yüzü güler ve dünya bir saniyeliğine güzelleşir!",
+      "button": "Puan ver"
+    }
+  },
+  "drawer": {
+    "menu": {
+      "universitySection": "Üniversiteler",
+      "lectureSection": "Dersler",
+      "noteSection": "Notlar",
+      "attendedLectures": "Aldığım Dersler",
+      "addedLectures": "Eklediğim Dersler",
+      "favoriteNotes": "Favoriler",
+      "addedNotes": "Eklediğim Notlar",
+      "invalidFileFormat": "Uygun bir resim formatı seçmedin",
+      "invalidFileSize": "Obaa kanka naptın? 5Mb üst sınır, senin resim {0} Mb!",
+      "logoutButton": "Çıkış Yap"
+    }
+  },
+  "page": {
+    "common": {
+      "error": "Sayfayı ararken bir hata oluştu",
+      "errorDescription": "Bu bir hata. Evet evet bu bir sıkıntı, bir dert. Belkide birazdan tekrar denersen her şey düzelebilir.",
+      "notFound": "Bu sayfayı bulamadım",
+      "notFoundDescription": "Aradığın sayfa aslında yok. Yok yani bulamadım. Bencce hemen geri dön bu ıssız diyarlardan."
+    },
+    "entrance": {
+      "title1": "FOTOKOPİ PEŞİNDE GEÇTİ BİR ÖMÜR",
+      "description1": "'O not mu iyidir?', 'Bu not mu iyidir?', 'Bu not sende var mıydı?', 'Acaba defterinin fotokopisini çektirebilir miyim?', 'Bu ders hangi hocadan alınır?' Bütün sorularının cevapları burada.",
+      "title2": "DERS GRUBU KOVALAMAKTAN PARMAKLARIM SOLDU",
+      "description2": "'Acaba ders grubu açılmış mıydı?', 'Grup yöneticisi kim?', 'Arkadaşlar beni de davet eder misiniz?' koşuşturmacaya ne gerek var? Burada her dersin zaten bir sohbet grubu var.",
+      "title3": "TURŞUSUNU MU KURUCAKSIN?",
+      "description3": "Zaten dersi zar zor geçtin, bir de o hırsla bütün notları çöpe atma, yada sonra lazım olur diye yastık altında saklama. Bak küçük kardeşler de var, ver notunu onlar da oynasınlar."
+    },
+    "verifyEmail": {
+      "loading": "Öğrenci e-posta adresin doğrulanıyor",
+      "successTitle": "Öğrenci Mailin Doğrulandı",
+      "successMessage": "Tebrikler üniversiteli, öğrenci mailini doğrulamayı başardın. Şuraya tıklayarak giriş yapabilirsin.",
+      "errorTitle": "Bir şeyler ters gitti",
+      "errorMessage": "Öğrenci mailini doğrulayamadık ama korkma. Şuraya tıklayarak giriş yapmayı deneyebilirsin eğer mailin hala doğrulanmadıysa, giriş yaptıktan sonra e-posta adresini kontrol et.",
+      "button": "Buraya tıklayarak."
+    },
+    "lecture": {
+      "attendButton": "Aldığım Derslere Ekle"
+    },
+    "addedLectures": {
+      "title": "Eklediğim Dersler"
+    },
+    "attendedLectures": {
+      "title": "Aldığım Dersler"
+    },
+    "note": {
+      "voteButton": "Puan Ver"
+    },
+    "addedNotes": {
+      "title": "Eklediğim Notlar"
+    },
+    "favoriteNotes": {
+      "title": "Favori Notlar"
+    }
+  },
+  "component": {
+    "autocomplete": {
+      "university": "Üniversite",
+      "lecture": "Ders",
+      "placeholder": "Üniversite yada ders ara...",
+      "empty": "Üniversiteleri isimleriyle ya da kısaltmalarıyla, dersleri de isimleriyle ya da kodlarıyla aratabilirsin!",
+      "notFound": "Aradığın dersi bulamadın mı?",
+      "notFoundButton": "Hemen Oluştur"
+    }
+  },
+  "list": {
+    "error": {
+      "message": "Bir hata oluştu. Bazen olur böyle şeyler.",
+      "button": "Tekrar Dene"
+    },
+    "lecture": {
+      "add": "Ders Ekle",
+      "empty": "Hiç ders yok ama değerlenir buralar..."
+    },
+    "post": {
+      "addAnnouncement": "Duyuru ekle",
+      "addSuggestion": "Öneri ekle",
+      "addUniversity": "Paylaşım ekle",
+      "emptyAnnouncement": "Duyuru falan yok. Buralar geleceğim kadar boş...",
+      "emptySuggestion": "Öneri paylaşan yok piyasada. Bütler dolup taşıyor, öğrenciler ağlıyor...",
+      "emptyUniversity": "Kimse bir şey paylaşmamış. Boşluk yani hiçlik. Yok..."
+    },
+    "note": {
+      "add": "Not Ekle",
+      "empty": "Not ekleyen yok ama değerlenir buralar..."
+    },
+    "comment": {
+      "add": "Yorum Ekle",
+      "empty": "Hiç yorum yok, durum fena..."
+    }
+  },
+  "listItem": {
+    "header": {
+      "yearAgo": " yıl önce",
+      "monthAgo": " ay önce",
+      "dayAgo": " gün önce",
+      "hourAgo": " saat önce",
+      "minuteAgo": " dakika önce",
+      "now": "Şimdi",
+      "extendedTime": "{0} {1} tarafından paylaşıldı."
+    },
+    "content": {
+      "edited": "Düzenlendi"
+    },
+    "action": {
+      "reply": "Yorum Yap",
+      "rate": "Puan Ver",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "report": "Şikayet et"
+    }
+  },
+  "tag": {
+    "notebook": "Defter",
+    "slide": "Slayt",
+    "lab": "Lab",
+    "homework": "Ödev",
+    "project": "Proje",
+    "quiz": "Quiz",
+    "midterm": "Vize",
+    "final": "Final"
+  },
+  "tab": {
+    "wall": "Duvar",
+    "lectures": "Dersler",
+    "annotations": "Duyurular",
+    "suggestions": "Öneriler",
+    "notes": "Notlar",
+    "comments": "Yorumlar"
+  },
+  "tooltip": {
+    "studentCount": "Öğrenci Sayısı",
+    "postCount": "Paylaşım Sayısı",
+    "lectureCount": "Ders Sayısı",
+    "attendedCount": "Dersi Alan Sayısı",
+    "noteCount": "Not Sayısı",
+    "favCount": "Favori Sayısı"
+  }
+}

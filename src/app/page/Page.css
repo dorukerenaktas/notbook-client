@@ -1,0 +1,29 @@
+.page {
+    min-height: calc(100vh - var(--toolbar-height) - var(--page-content-padding));
+}
+
+.pageError {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - var(--toolbar-height) - var(--page-content-padding));
+}
+
+.pageErrorText {
+    font-family: Error, sans-serif;
+    font-size: 72px;
+    color: var(--primary-color);
+}
+
+.pageErrorTitle {
+    font-size: 18px;
+    color: #666666;
+}
+
+.pageErrorDescription {
+    text-align: center;
+    width: 70%;
+    font-size: 14px;
+    color: #8c8c8c;
+}
