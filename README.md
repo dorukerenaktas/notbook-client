@@ -11,7 +11,7 @@
 > Tips
 
 - Want to develop with running backend checkout: <a href="https://github.com/dorukBen/notbook-server">notbook-server<a/>
-- Checkout docker built: <a href="https://hub.docker.com/r/dorukben/notbook-client">notbook-server<a/>
+- Checkout docker built: <a href="https://hub.docker.com/r/dorukben/notbook-client">notbook-client<a/>
 - Suggested IDE: <a href="https://www.jetbrains.com/webstorm/">Webstorm<a/>
 
 ## Table of Contents
@@ -60,7 +60,7 @@ $ npm build
 
 - Build with docker
 ```shell
-$ docker build -t <your-build-name> .
+$ docker build -t <your-build-tag> .
 ```
 
 ## Contributing
