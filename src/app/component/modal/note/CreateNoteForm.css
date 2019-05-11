@@ -1,0 +1,11 @@
+.createNoteForm {
+    text-align: left;
+}
+
+.createNoteFormTextArea {
+    resize: none;
+}
+
+.createNoteFormUpload {
+    width: 100%;
+}

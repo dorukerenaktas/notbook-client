@@ -1,0 +1,16 @@
+.reportNoteModal {
+    padding: 24px;
+}
+
+.reportNoteModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.reportNoteModalDescription {
+    text-align: center;
+}
+
+.reportNoteModalButton {
+    margin-top: 24px;
+}

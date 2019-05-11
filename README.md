@@ -1,44 +1,111 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="http://notbook.net"><img width="300" src="https://i.ibb.co/BgKrd7q/notbook-logo.png" title="notbook." alt="notbook."></a>
 
-## Available Scripts
+<!-- [![notbook.](https://i.ibb.co/BgKrd7q/notbook-logo.png)](http://notbook.net) -->
 
-In the project directory, you can run:
+*Student sharing platform web client. Built with Typescript and React.*
 
-### `npm start`
+[![Build Status](https://travis-ci.com/dorukBen/notbook-client.svg?branch=master)](https://travis-ci.com/dorukBen/notbook-client)
+[![Docker Automated](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/dorukben/notbook-client)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> Tips
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- Want to develop with running backend checkout: <a href="https://github.com/dorukBen/notbook-server">notbook-server<a/>
+- Checkout docker built: <a href="https://hub.docker.com/r/dorukben/notbook-client">notbook-server<a/>
+- Suggested IDE: <a href="https://www.jetbrains.com/webstorm/">Webstorm<a/>
 
-### `npm test`
+## Table of Contents
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [Team](#team)
+- [FAQ](#faq)
+- [Contact](#contact)
+- [License](#license)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
+- Requirements: `git` & `npm`
 
-### `npm run build`
+### Clone
+- Create directory and navigate into it
+```shell
+$ mkdir notbook-client
+$ cd notbook-client
+```
+- Clone this repo to your local machine using
+```shell
+$ git clone https://github.com/dorukBen/notbook-client.git
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Development
+- Install dependencies
+```shell
+$ npm i
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Start development server with standalone fake data
+```shell
+$ npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- If you want to develop with live backend you can use
+```shell
+$ REACT_APP_NO_FAKE=true npm start
+```
 
-### `npm run eject`
+### Build
+- Local build using npm
+```shell
+$ npm build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Build with docker
+```shell
+$ docker build -t <your-build-name> .
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
+> So, you want to contribute COOL!
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Step 1
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Fork the repository
 
-## Learn More
+### Step 2
+- **HACK AWAY!**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Step 3
+- Create a new pull request using <a href="https://github.com/dorukBen/notbook-client/compare/" target="_blank">`https://github.com/dorukBen/notbook-client/compare/`</a>.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Team
+> Want to get into the team mail us `team@notbook.net`
+
+
+| <a href="https://github.com/dorukBen" target="_blank">**Doruk**</a> | <a href="" target="_blank">**New Member**</a> | 
+| :---------------------------------------------------------------: | :---------------------------------------------------------------: |
+| <img width="100" src="https://avatars2.githubusercontent.com/u/20422563?s=400"/> | <img width="100" src=""/> |
+| <a href="https://github.com/dorukBen" target="_blank">`github.com/dorukBen`</a> | <a href="" target="_blank">`github.com/newMember`</a> |
+
+- You need at least one pull request for team approval
+
+## FAQ
+- **Why there is only YTÜ as a university?**
+    - Yıldız Technical University is our pilot school. More schools will be added stay tuned.
+    
+## Contact
+Reach out to me at one of the following places!
+
+- LinkedIn at <a href="www.linkedin.com/in/doruk-eren-aktaş" target="_blank">`Doruk Eren AKTAŞ`</a>
+- Mail at <a href="mailto:dorukerena@gmail.com?Subject=Hello" target="_blank">`dorukerena@gmail.com`</a>
+
+---
+
+## Donations
+- Wanna buy me a beer ?
+
+<a href="https://www.patreon.com/notbook"><img width="200" alt="Support via Patreon" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png"><a/>
+
+---
+
+## License
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
+- Copyright 2019 © <a href="http://notbook.net" target="_blank">notbook.</a>

@@ -1,0 +1,22 @@
+.editNoteModal {
+    padding: 24px;
+}
+
+.editNoteModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.editNoteModalHeader {
+    text-align: left;
+}
+
+.editNoteModalName {
+    margin: 12px;
+    font-size: 14px;
+}
+
+.editNoteModalTextArea {
+    margin: 12px 0 12px 0;
+    resize: none;
+}

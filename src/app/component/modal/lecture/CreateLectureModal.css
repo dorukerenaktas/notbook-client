@@ -1,0 +1,22 @@
+.createLectureModal {
+    padding: 24px;
+}
+
+.createLectureModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.createLectureModalHeader {
+    text-align: left;
+}
+
+.createLectureModalName {
+    margin: 12px;
+    font-size: 14px;
+}
+
+.createLectureModalTextArea {
+    margin: 12px 0 12px 0;
+    resize: none;
+}

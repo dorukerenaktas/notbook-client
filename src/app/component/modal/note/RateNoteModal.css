@@ -1,0 +1,21 @@
+.rateNoteModal {
+    padding: 24px;
+}
+
+.rateNoteModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.rateNoteModalDescription {
+    text-align: center;
+}
+
+.rateNoteModalRate {
+    margin-top: 12px;
+    font-size: 32px;
+}
+
+.rateNoteModalButton {
+    margin-top: 24px;
+}

@@ -1,0 +1,22 @@
+.editCommentModal {
+    padding: 24px;
+}
+
+.editCommentModalContent {
+    max-width: 360px;
+    margin: auto;
+}
+
+.editCommentModalHeader {
+    text-align: left;
+}
+
+.editCommentModalName {
+    margin: 12px;
+    font-size: 14px;
+}
+
+.editCommentModalTextArea {
+    margin: 12px 0 12px 0;
+    resize: none;
+}

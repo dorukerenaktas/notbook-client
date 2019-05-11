@@ -1,0 +1,17 @@
+.listItemContent {
+    cursor: default;
+    margin-bottom: 8px;
+}
+
+.listItemContentText {
+    font-size: 14px;
+    font-weight: 200;
+    color: #595959;
+}
+
+.listItemContentEdited {
+    margin-left: 4px;
+    font-size: 12px;
+    font-weight: 200;
+    color: #bfbfbf;
+}

@@ -1,0 +1,13 @@
+.reSendVerificationModal {
+    padding: 24px;
+    text-align: center;
+}
+
+.reSendVerificationModal p {
+    margin: 12px auto 24px;
+}
+
+.reSendVerificationModalDescription {
+    margin-top: 12px;
+    font-size: 12px;
+}

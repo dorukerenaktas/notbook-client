@@ -1,0 +1,225 @@
+.baseModal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--dim-color);
+    z-index: 20;
+    overflow: scroll;
+
+    -webkit-transition: background 0.5s ease-out;
+    -moz-transition: background 0.5s ease-out;
+    -o-transition: background 0.5s ease-out;
+    transition: background 0.5s ease-out;
+}
+
+.fadeInBaseModal {
+    -webkit-animation: showModal 0.2s linear forwards;
+    -moz-animation: showModal 0.2s linear forwards;
+    -o-animation: showModal 0.2s linear forwards;
+    animation: showModal 0.2s linear forwards;
+}
+
+@-webkit-keyframes showModal {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-moz-keyframes showModal {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes showModal {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes showModal {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.fadeOutBaseModal {
+    -webkit-animation: hideModal 0.2s ease-out forwards;
+    -moz-animation: hideModal 0.2s ease-out forwards;
+    -o-animation: hideModal 0.2s ease-out forwards;
+    animation: hideModal 0.2s ease-out forwards;
+}
+
+@-webkit-keyframes hideModal {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes hideModal {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes hideModal {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes hideModal {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.baseModalContent {
+    overflow: hidden;
+    position: relative;
+    max-width: 400px;
+    width: calc(var(--page-content-width) - (var(--page-content-padding) * 2));
+    margin: 20vh auto 0;
+    border-radius: 4px;
+    background: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16),
+    0 3px 1px -2px rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.zoomInBaseModalContent {
+    -webkit-animation: zoomInCard 0.15s ease-out forwards;
+    -moz-animation: zoomInCard 0.15s ease-out forwards;
+    -o-animation: zoomInCard 0.15s ease-out forwards;
+    animation: zoomInCard 0.15s ease-out forwards;
+}
+
+@-webkit-keyframes zoomInCard {
+    0% {
+        -webkit-transform: scale(0, 0)
+    }
+    100% {
+        -webkit-transform: scale(1, 1)
+    }
+}
+
+@-moz-keyframes zoomInCard {
+    0% {
+        -moz-transform: scale(0, 0)
+    }
+    100% {
+        -moz-transform: scale(1, 1)
+    }
+}
+
+@-o-keyframes zoomInCard {
+    0% {
+        -o-transform: scale(0, 0)
+    }
+    100% {
+        -o-transform: scale(1, 1)
+    }
+}
+
+@keyframes zoomInCard {
+    0% {
+        transform: scale(0, 0);
+        -ms-transform: scale(0, 0);
+    }
+    100% {
+        transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+    }
+}
+
+.slideOutBaseModalContent {
+    -webkit-animation: slideOutCard 0.15s ease-out forwards;
+    -moz-animation: slideOutCard 0.15s ease-out forwards;
+    -o-animation: slideOutCard 0.15s ease-out forwards;
+    animation: slideOutCard 0.15s ease-out forwards;
+}
+
+@-webkit-keyframes slideOutCard {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(10px)
+    }
+}
+
+@-moz-keyframes slideOutCard {
+    0% {
+        -moz-transform: translateY(0)
+    }
+    100% {
+        -moz-transform: translateY(10px)
+    }
+}
+
+@-o-keyframes slideOutCard {
+    0% {
+        -o-transform: translateY(0)
+    }
+    100% {
+        -o-transform: translateY(10px)
+    }
+}
+
+@keyframes slideOutCard {
+    0% {
+        transform: translateY(0);
+        -ms-transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+        -ms-transform: translateY(10px);
+    }
+}
+
+.baseModalCloseButton {
+    border: none;
+    display: block;
+    position: relative;
+    margin: 24px auto 20vh;
+    align-self: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16),
+    0 3px 1px -2px rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.baseModalCloseButton:disabled {
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16),
+    0 3px 1px -2px rgba(0, 0, 0, 0.14),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    pointer-events: none;
+}
+
+

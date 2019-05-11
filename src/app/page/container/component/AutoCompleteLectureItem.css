@@ -1,0 +1,14 @@
+.autoCompleteLectureContainer {
+    margin-left: 8px;
+}
+
+.autoCompleteLectureUniversityAbbr {
+    font-size: 14px;
+    font-weight: bold;
+    color: #757575;
+}
+
+.autoCompleteLectureLectureCode {
+    margin-left: 8px;
+    font-size: 14px;
+}

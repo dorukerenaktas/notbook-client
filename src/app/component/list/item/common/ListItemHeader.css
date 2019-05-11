@@ -1,0 +1,25 @@
+.listItemHeader {
+    cursor: default;
+}
+
+.listItemHeaderTitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #595959;
+}
+
+.listItemHeaderSubtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8c8c8c;
+}
+
+.listItemHeaderRate {
+    font-size: 12px;
+    color: #FDD835;
+}
+
+.listItemHeaderTime {
+    font-size: 11px;
+    color: #bfbfbf;
+}
