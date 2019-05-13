@@ -38,7 +38,7 @@ class CreateLectureModal extends Component<ExtendedCreateLectureModalProps, Crea
                 this.setState({ loading: true });
             })
             .onSuccess((response) => {
-                message.success(t('response.updateNote.success'));
+                message.success(t('response.createLecture.success'));
                 this.saveLectureCount();
                 this.props.onSuccess(response.lectureId, code, name);
                 (this.refs.modal as BaseModal).close(true);

@@ -26,6 +26,7 @@
       "userNotExist": "Öğrenci e-postası sisteme kayıtlı değil"
     },
     "createLecture": {
+      "success": "Ders başarıyla oluşturuldu!",
       "lectureAlreadyExists": "Bu kodu veya adı taşıyan ders zaten var!"
     },
     "createPost": {
@@ -131,7 +132,8 @@
     "noteName": {
       "placeholder": "Not adı",
       "required": "Not adı boş bırakılamaz",
-      "label": "Not Adı"
+      "label": "Not Adı",
+      "invalid": "Ders adı sadece harf ve sayı içerebilir"
     },
     "noteDescription": {
       "placeholder": "Not ile alakalı ayırt edici her şeyi buraya yazabilirsin... Hangi hocanın notu olduğunu, hangi konuları kapsadığını falan mesela...",
