@@ -100,7 +100,7 @@ class ContainerPage extends Component<ContainerPageProps, ContainerPageState> {
         const { drawerVisible, drawerSelectedKey, drawerOpenKey } = this.state;
         return (
             <div className='mainContainer'>
-                <Toolbar onLogoClick={ this.showDrawer }/>
+                <Toolbar showDrawer={ this.showDrawer }/>
                 <div className='mainContent'>
                     { children }
                 </div>

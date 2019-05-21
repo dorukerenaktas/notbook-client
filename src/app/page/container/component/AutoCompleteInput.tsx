@@ -176,7 +176,7 @@ class AutoCompleteInput extends Component<ExtendedAutoCompleteInputProps, AutoCo
                           placeholder={ t('component.autocomplete.placeholder') } onSearch={ this.onSearch }
                           onSelect={ this.onSearchSelect } onChange={ this.onSearchChange } value={ this.state.query }
                           dataSource={ options } optionLabelProp='value'>
-                <Input.Search onFocus={ this.onSearchFocus }/>
+                <Input.Search onFocus={ this.onSearchFocus } />
             </AutoComplete>
         );
     }

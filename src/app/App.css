@@ -4,13 +4,13 @@
     /* Color */
     --primary-color: #1890FF;
     --primary-white-color: #FFFFFF;
+    --primary-text-dark-color: #8c8c8c;
     --primary-text-light-color: #E8E8E8;
     --dim-color: rgba(245, 245, 245, 0.8);
     --light-dim-color: rgba(255, 255, 255, 0.5);
 
     /* Toolbar */
     --toolbar-height: 64px;
-    --toolbar-text-align: center;
     --toolbar-line-height: 64px;
     --toolbar-horizontal-padding: 12px;
     --toolbar-z-index: 10;
@@ -23,9 +23,6 @@
 
 @media only screen and (max-width: 575px) {
     :root {
-        --toolbar-height: 84px;
-        --toolbar-text-align: center;
-        --toolbar-line-height: 36px;
         --toolbar-horizontal-padding: 12px;
 
         --page-content-padding: 12px;
@@ -35,9 +32,6 @@
 
 @media only screen and (min-width: 576px) {
     :root {
-        --toolbar-height: 84px;
-        --toolbar-text-align: center;
-        --toolbar-line-height: 36px;
         --toolbar-horizontal-padding: 24px;
 
         --page-content-padding: 12px;
@@ -47,9 +41,6 @@
 
 @media only screen and (min-width: 768px) {
     :root {
-        --toolbar-height: 64px;
-        --toolbar-text-align: left;
-        --toolbar-line-height: 64px;
         --toolbar-horizontal-padding: 36px;
 
         --page-content-padding: 12px;
@@ -59,9 +50,6 @@
 
 @media only screen and (min-width: 992px) {
     :root {
-        --toolbar-height: 64px;
-        --toolbar-text-align: left;
-        --toolbar-line-height: 64px;
         --toolbar-horizontal-padding: 36px;
 
         --page-content-padding: 12px;
@@ -71,9 +59,6 @@
 
 @media only screen and (min-width: 1200px) {
     :root {
-        --toolbar-height: 64px;
-        --toolbar-text-align: left;
-        --toolbar-line-height: 64px;
         --toolbar-horizontal-padding: 36px;
 
         --page-content-padding: 12px;
@@ -83,9 +68,6 @@
 
 @media only screen and (min-width: 1600px) {
     :root {
-        --toolbar-height: 64px;
-        --toolbar-text-align: left;
-        --toolbar-line-height: 64px;
         --toolbar-horizontal-padding: 36px;
 
         --page-content-padding: 12px;
