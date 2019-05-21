@@ -10,12 +10,16 @@ import { LectureList, PostList } from '../../component';
 import { Page } from '../Page';
 import './UniversityPage.css';
 
+export const TAB_KEY_WALL = 'wall';
+export const TAB_KEY_LECTURES = 'lectures';
+
 type UniversityPageProps = {};
 
 type ExtendedUniversityPageProps = UniversityPageProps & WithTranslation & RouteComponentProps<any>;
 
 interface UniversityPageState {
     university: ExtendedUniversity,
+    activeTab: string,
     loading: boolean,
     error: boolean,
     notFound: boolean
@@ -28,12 +32,14 @@ class UniversityPage extends Component<ExtendedUniversityPageProps, UniversityPa
 
         this.state = {
             university: props.location.state ? props.location.state.data : undefined,
+            activeTab: this.extractTabParams(props.match.params.tab),
             loading: false,
             error: props.location.state ? props.location.state.error : false,
             notFound: props.location.state ? props.location.state.notFound : false
         };
 
         this.loadPage = this.loadPage.bind(this);
+        this.onTabChange = this.onTabChange.bind(this);
     }
 
     componentDidMount(): void {
@@ -49,6 +55,10 @@ class UniversityPage extends Component<ExtendedUniversityPageProps, UniversityPa
     componentDidUpdate(prevProps: ExtendedUniversityPageProps): void {
         if (prevProps.match.params.id !== this.props.match.params.id) {
             this.setState({ university: this.props.location.state.data });
+        }
+
+        if (this.props.match.params.tab !== this.state.activeTab) {
+            this.setState({ activeTab: prevProps.match.params.tab });
         }
     }
 
@@ -74,6 +84,21 @@ class UniversityPage extends Component<ExtendedUniversityPageProps, UniversityPa
             .onEnd(() => {
                 this.setState({ loading: false });
             }).exec();
+    }
+
+    onTabChange(activeKey: string): void {
+        this.props.history.push('/university/' + this.props.match.params.id + '/' + activeKey);
+        this.setState({ activeTab: activeKey });
+    }
+
+    extractTabParams(tab: string): string {
+        if (tab !== TAB_KEY_WALL && tab !== TAB_KEY_LECTURES) {
+            this.props.history.replace('/university/' + this.props.match.params.id + '/' + TAB_KEY_WALL);
+
+            return TAB_KEY_WALL;
+        }
+
+        return tab;
     }
 
     onPostAdded = (): void => {
@@ -102,7 +127,7 @@ class UniversityPage extends Component<ExtendedUniversityPageProps, UniversityPa
 
     render(): ReactNode {
         const { t } = this.props;
-        const { university, loading, error, notFound } = this.state;
+        const { university, activeTab, loading, error, notFound } = this.state;
 
         let header: ReactNode;
         let content: ReactNode;
@@ -152,12 +177,12 @@ class UniversityPage extends Component<ExtendedUniversityPageProps, UniversityPa
 
             content = (
                 <div className='universityPage'>
-                    <Tabs tabBarStyle={ tabBarStyle } defaultActiveKey='1'>
-                        <Tabs.TabPane tab={ t('tab.wall') } key='1'>
+                    <Tabs tabBarStyle={ tabBarStyle } activeKey={ activeTab } onChange={ this.onTabChange }>
+                        <Tabs.TabPane tab={ t('tab.wall') } key={ TAB_KEY_WALL }>
                             <PostList parent={ university } type={ PostType.University }
                                       onPostAdded={ this.onPostAdded } onPostRemoved={ this.onPostRemoved }/>
                         </Tabs.TabPane>
-                        <Tabs.TabPane tab={ t('tab.lectures') } key='2'>
+                        <Tabs.TabPane tab={ t('tab.lectures') } key={ TAB_KEY_LECTURES }>
                             <LectureList parent={ university }
                                          onLectureAdded={ this.onLectureAdded }
                                          onLectureRemoved={ this.onLectureRemoved }/>

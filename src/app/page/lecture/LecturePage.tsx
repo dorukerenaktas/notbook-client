@@ -11,12 +11,17 @@ import { RouteLink, Routes } from '../../component/route';
 import { Page } from '../Page';
 import './LecturePage.css';
 
+export const TAB_KEY_ANNOUNCEMENTS = 'announcements';
+export const TAB_KEY_SUGGESTIONS = 'suggestions';
+export const TAB_KEY_NOTES = 'notes';
+
 type LecturePageProps = {}
 
 type ExtendedLecturePageProps = LecturePageProps & WithTranslation & RouteComponentProps<any>;
 
 interface LecturePageState {
     lecture: Lecture,
+    activeTab: string,
     loading: { data: boolean, attend: boolean },
     error: boolean,
     notFound: boolean
@@ -29,6 +34,7 @@ class LecturePage extends Component<ExtendedLecturePageProps, LecturePageState> 
 
         this.state = {
             lecture: props.location.state ? props.location.state.data : undefined,
+            activeTab: this.extractTabParams(props.match.params.tab),
             loading: { data: false, attend: false },
             error: props.location.state ? props.location.state.error : false,
             notFound: props.location.state ? props.location.state.notFound : false
@@ -36,6 +42,7 @@ class LecturePage extends Component<ExtendedLecturePageProps, LecturePageState> 
 
         this.loadPage = this.loadPage.bind(this);
         this.onAttend = this.onAttend.bind(this);
+        this.onTabChange = this.onTabChange.bind(this);
     }
 
     componentDidMount(): void {
@@ -50,6 +57,10 @@ class LecturePage extends Component<ExtendedLecturePageProps, LecturePageState> 
     componentDidUpdate(prevProps: ExtendedLecturePageProps): void {
         if (prevProps.match.params.id !== this.props.match.params.id) {
             this.setState({ lecture: this.props.location.state.data });
+        }
+
+        if (this.props.match.params.tab !== this.state.activeTab) {
+            this.setState({ activeTab: prevProps.match.params.tab });
         }
     }
 
@@ -137,6 +148,21 @@ class LecturePage extends Component<ExtendedLecturePageProps, LecturePageState> 
         }
     }
 
+    onTabChange(activeKey: string): void {
+        this.props.history.push('/lecture/' + this.props.match.params.id + '/' + activeKey);
+        this.setState({ activeTab: activeKey });
+    }
+
+    extractTabParams(tab: string): string {
+        if (tab !== TAB_KEY_ANNOUNCEMENTS && tab !== TAB_KEY_SUGGESTIONS && tab !== TAB_KEY_NOTES) {
+            this.props.history.replace('/lecture/' + this.props.match.params.id + '/' + TAB_KEY_ANNOUNCEMENTS);
+
+            return TAB_KEY_ANNOUNCEMENTS;
+        }
+
+        return tab;
+    }
+
     saveLectureCount = (increased: boolean) => {
         let user = this.global.user;
 
@@ -171,7 +197,7 @@ class LecturePage extends Component<ExtendedLecturePageProps, LecturePageState> 
 
     render(): React.ReactNode {
         const { t } = this.props;
-        const { lecture, loading, error, notFound } = this.state;
+        const { lecture, activeTab, loading, error, notFound } = this.state;
 
         let header: React.ReactNode;
         let content: React.ReactNode;
@@ -236,16 +262,16 @@ class LecturePage extends Component<ExtendedLecturePageProps, LecturePageState> 
 
             content = (
                 <div style={ { marginTop: 12 } }>
-                    <Tabs defaultActiveKey='1' tabBarStyle={ tabBarStyle }>
-                        <Tabs.TabPane tab={ t('tab.annotations') } key='1'>
+                    <Tabs tabBarStyle={ tabBarStyle } activeKey={ activeTab } onChange={ this.onTabChange }>
+                        <Tabs.TabPane tab={ t('tab.annotations') } key={ TAB_KEY_ANNOUNCEMENTS }>
                             <PostList parent={ lecture } type={ PostType.Announcement }
                                       onPostAdded={ this.onPostAdded } onPostRemoved={ this.onPostRemoved }/>
                         </Tabs.TabPane>
-                        <Tabs.TabPane tab={ t('tab.suggestions') } key='2'>
+                        <Tabs.TabPane tab={ t('tab.suggestions') } key={ TAB_KEY_SUGGESTIONS }>
                             <PostList parent={ lecture } type={ PostType.Suggestion }
                                       onPostAdded={ this.onPostAdded } onPostRemoved={ this.onPostRemoved }/>
                         </Tabs.TabPane>
-                        <Tabs.TabPane tab={ t('tab.notes') } key='3'>
+                        <Tabs.TabPane tab={ t('tab.notes') } key={ TAB_KEY_NOTES }>
                             <NoteList parent={ lecture }
                                       onNoteAdded={ this.onNoteAdded } onNoteRemoved={ this.onNoteRemoved }/>
                         </Tabs.TabPane>

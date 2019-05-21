@@ -41,8 +41,6 @@ class RouteProvider extends Component<RouteProviderProps, RouteProviderState> {
         const { children } = this.props;
         const { token } = this.global;
 
-        console.log('token', token);
-
         const openRoutes = Children.map(children, child => {
             if (isValidElement<RouteProps>(child)) {
                 let element: React.ReactElement<RouteProps> = child;
