@@ -26,18 +26,28 @@ class Toolbar extends Component<ExtendedToolbarProps, ToolbarState> {
         };
 
         this.showSearchBar = this.showSearchBar.bind(this);
+        this.hideSearchBar = this.hideSearchBar.bind(this);
+        this.changeSearchBarVisibility = this.changeSearchBarVisibility.bind(this);
+    }
+
+    changeSearchBarVisibility(): void {
+        if (this.state.searchBarVisibility) {
+            this.hideSearchBar();
+        } else  {
+            this.showSearchBar();
+        }
     }
 
     showSearchBar(): void {
-        if (this.state.searchBarVisibility) {
-            this.setState({ searchBarVisibility: false });
-            document.documentElement.style.setProperty('--toolbar-height', '64px');
-            document.documentElement.style.setProperty('--toolbar-line-height', '64px');
-        } else  {
-            this.setState({ searchBarVisibility: true });
-            document.documentElement.style.setProperty('--toolbar-height', '128px');
-            document.documentElement.style.setProperty('--toolbar-line-height', '64px');
-        }
+        this.setState({ searchBarVisibility: true });
+        // Set global css variable
+        document.documentElement.style.setProperty('--toolbar-height', '128px');
+    }
+
+    hideSearchBar(): void {
+        this.setState({ searchBarVisibility: false });
+        // Set global css variable
+        document.documentElement.style.setProperty('--toolbar-height', '64px');
     }
 
     render(): ReactNode {
@@ -58,10 +68,10 @@ class Toolbar extends Component<ExtendedToolbarProps, ToolbarState> {
                         <span className='logo toolbarLogo'>{ t('appName') }</span>
                     </div>
                     <div className='toolbarSearchSection' style={ searchSectionStyle }>
-                        <AutoCompleteInput/>
+                        <AutoCompleteInput onSelected={ this.hideSearchBar }/>
                     </div>
                     <div className='toolbarActionSection' style={ actionSectionStyle }>
-                        <Icon className='toolbarAction' type={ searchActionIconType } onClick={ this.showSearchBar }/>
+                        <Icon className='toolbarAction' type={ searchActionIconType } onClick={ this.changeSearchBarVisibility }/>
                     </div>
                 </div>
             </div>

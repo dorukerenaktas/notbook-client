@@ -15,7 +15,9 @@ import './AutoCompleteInput.css';
 import { AutoCompleteLectureItem } from './AutoCompleteLectureItem';
 import { AutoCompleteUniversityItem } from './AutoCompleteUniversityItem';
 
-type AutoCompleteInputProps = {};
+type AutoCompleteInputProps = {
+    onSelected: () => void
+};
 
 type ExtendedAutoCompleteInputProps =
     AutoCompleteInputProps
@@ -69,9 +71,10 @@ class AutoCompleteInput extends Component<ExtendedAutoCompleteInputProps, AutoCo
     }
 
     onSearchSelect(value: SelectValue, { props: { children: { props } } }: any): void {
-        const { dispatch, history } = this.props;
+        const { dispatch, history, onSelected } = this.props;
         this.setState({ query: value.toString(), selected: true });
 
+        onSelected();
         if (props.lecture) {
             loadRoute(Routes.Lecture, props.lecture.id, dispatch, history);
         } else if (props.university) {
